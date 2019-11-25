@@ -23,6 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, retain) id<CastSessionListener> sessionListener;
 @property (nonatomic, retain) NSMutableDictionary* genericChannels;
 @property (nonatomic, retain) NSString* sessionStatus;
+@property (nonatomic, retain) GCKGenericChannel* channel;
 
 - (instancetype)initWithDevice:(GCKDevice*)device cordovaDelegate:(id<CDVCommandDelegate>)cordovaDelegate initialCommand:(CDVInvokedUrlCommand*)initialCommand;
 - (void)add:(id<CastSessionListener>)listener;
